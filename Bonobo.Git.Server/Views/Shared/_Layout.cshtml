@@ -24,6 +24,7 @@
                     @if (Request.IsAuthenticated)
                     {
                         <li><a href="@Url.Action("Index", "Repository")" class="repository"><i class="fa fa-hdd-o"></i> @Resources.Layout_Repositories</a></li>
+                        <li><a href="@Url.Action("Index", "Help")" class="repository"><i class="fa fa-question-circle"></i> help</a></li>
                     }
                     @if (User.IsInRole(Definitions.Roles.Administrator))
                     {
@@ -62,9 +63,9 @@
                     @UserConfiguration.Current.SiteFooterMessage
                     @:&middot;
                 }
-                Bonobo Git Server (@Html.AssemblyVersion()) &copy; 2015 <a href="http://www.chodounsky.net">Jakub Chodounský</a>
-                &middot; <a href="http://bonobogitserver.com/">@Resources.Home</a> 
-                &middot; <a href="https://github.com/jakubgarfield/Bonobo-Git-Server">@Resources.Source</a>
+                Acutest Git Server (@Html.AssemblyVersion()) &copy; 2015 Craig Williams
+                &middot; <a href="http://acutest.net/">@Resources.Home</a> 
+                &middot; <a href="https://orbis.acutesales.co.uk/orbistoweb/">Orbis</a>
             </p>
         </div>
     </div>
